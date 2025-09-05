@@ -7,6 +7,17 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.19.2"
-  }
+    "express": "^4.21.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alhuizenga/dishpix-gemini-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alhuizenga/dishpix-gemini-cli/issues"
+  },
+  "homepage": "https://github.com/alhuizenga/dishpix-gemini-cli#readme"
 }
