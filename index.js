@@ -1,9 +1,14 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 const port = process.env.PORT || 8080;
 
-app.get('/', (req, res) => {
-  res.send('Hello, World!');
+// Serve static files from the Vue app
+app.use(express.static(path.join(__dirname, 'frontend/dist')));
+
+// Handle SPA
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'frontend/dist', 'index.html'));
 });
 
 app.listen(port, () => {
